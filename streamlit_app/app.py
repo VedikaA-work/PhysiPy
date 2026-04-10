@@ -8,7 +8,7 @@ st.set_page_config(page_title="PhysiPy", page_icon="⚛️")
 st.markdown("""
 <style>
 .card {
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -24,6 +24,8 @@ st.subheader("🍎 Newton's Second Law Calculator")
 
 # 4. Main Calculator Card
 st.markdown('<div class="card">', unsafe_allow_html=True)
+
+st.write("### 🧮 Calculator")
 
 mass = st.text_input("⚖️ Enter mass (kg)", placeholder="e.g. 10")
 a = 9.8  # Constant acceleration
