@@ -20,7 +20,7 @@ st.markdown("""
 
 # 3. Header Section
 st.title("⚛️ PhysiPy")
-st.subheader("📦 Newton's Second Law Calculator")
+st.subheader("🍎 Newton's Second Law Calculator")
 
 # 4. Main Calculator Card
 st.markdown('<div class="card">', unsafe_allow_html=True)
