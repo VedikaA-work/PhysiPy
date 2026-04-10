@@ -28,15 +28,23 @@ if st.button("🚀 Calculate Force"):
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-with st.expander("🧠 Learn the Physics Behind This"):
+with st.expander("🧠 Learn the Physics & Logic"):
     st.markdown("""
-**Newton's Second Law**
-
-F = m × a
-
-F → Force (N)  
-m → Mass (kg)  
-a → Acceleration (m/s²)
-""")
-
-st.caption("👩‍💻 Created by Vedika Apte | PhysiPy")
+    ### 🧪 Scientific Overview
+    Newton's Second Law states that the acceleration of an object depends on the mass of the object and the amount of force applied.
+    
+    **The Formula:**
+    $$F = m \\times a$$
+    
+    * **Force ($F$):** Measured in Newtons ($N$).
+    * **Mass ($m$):** Measured in Kilograms ($kg$).
+    * **Acceleration ($a$):** The rate of change of velocity ($m/s^2$).
+    
+    ---
+    ### 💻 Implementation Details
+    This calculator is built with robust programming practices:
+    * **Standard Constants:** Defaults to Earth's gravity ($9.8 \, m/s^2$).
+    * **Input Validation:** Uses `try-except` blocks to ensure only numeric data is processed.
+    * **Modular Design:** Written for easy integration into larger physics simulations.
+    """)
+    st.caption("👩‍💻 Created by Vedika Apte | PhysiPy")
