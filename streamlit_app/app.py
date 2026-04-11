@@ -41,7 +41,7 @@ if st.button("🚀 Calculate Force"):
             
             st.success(f"💪 Force = {force:.2f} N")
             
-            st.toast("Calculation Complete!", icon="👏")
+            st.snow()
         except ValueError:
             st.error("❌ Please enter a valid number")
     else:
