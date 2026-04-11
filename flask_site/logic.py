@@ -11,20 +11,17 @@ Python program to demonstrate Newton's second law of motion
 def Force(m,a):
     return m*a
 
-try:
-    mass = input("Enter mass in kg(kg):")
-    accl = 9.8
+def calculate_force(mass):
+    try:
+        a = 9.8
+        m = float(mass)
     
-    m = float(mass)
-    a = float(accl)
-    
-    if m==0:
-        print("Error: mass cannot be zero")
-    else:
-        F = Force(m,a)
-        print("Force acting on body is" , F , "N")
+        if m<=0:
+           return "Error: mass must be greater than zero"
+        else:
+         F = Force(m,a)
+         return "Force acting on body is" , {F} , "N"
 
-except:
+    except ValueError:
     print("Error: Enter a numeric value")
-    
-Force(m,a)
+
