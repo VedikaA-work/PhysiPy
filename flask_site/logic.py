@@ -19,9 +19,9 @@ def calculate_force(mass):
         if m<=0:
            return "Error: mass must be greater than zero"
         else:
-         F = Force(m,a)
-         return "Force acting on body is" , {F} , "N"
+           F = Force(m,a)
+           return f"Force acting on body is {F} N"
 
-    except ValueError:
-    print("Error: Enter a numeric value")
+    except ValueError: 
+        return "Error: Enter a numeric value"
 
