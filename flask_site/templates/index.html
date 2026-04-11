@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhysiPy - Newton's Second Law</title>
+</head>
+<body>
+    <h1>Newton's Second Law Calculator</h1>
+    <p>Calculate the Force (F = m × a) where acceleration is 9.8 m/s².</p>
 
+    <form method="POST">
+        <label for="mass">Enter Mass (kg):</label>
+        <input type="text" id="mass" name="mass" placeholder="e.g. 10" required>
+        <button type="submit">Calculate Force</button>
+    </form>
+
+    <br>
+
+    {% if result %}
+        <div style="border: 1px solid #000; padding: 10px; width: fit-content;">
+            <strong>Result:</strong> {{ result }}
+        </div>
+    {% endif %}
+
+</body>
+</html>
