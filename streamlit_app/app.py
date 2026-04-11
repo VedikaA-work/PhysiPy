@@ -24,7 +24,9 @@ st.subheader("🍎 Newton's Second Law Calculator")
 
 # 4. Main Calculator Card
 st.markdown('<div class="card">', unsafe_allow_html=True)
+
 st.write("### 🧮 Calculator")
+
 mass = st.text_input("⚖️ Enter mass (kg)", placeholder="e.g. 10")
 a = 9.8  # Constant acceleration
 if st.button("🚀 Calculate Force"):
@@ -38,11 +40,13 @@ if st.button("🚀 Calculate Force"):
                 force = m * a
             
             st.success(f"💪 Force = {force:.2f} N")
-            st.balloons()
+            
+            st.toast("Calculation Complete!", icon="👏")
         except ValueError:
             st.error("❌ Please enter a valid number")
     else:
         st.warning("⚠️ Please enter a mass value first")
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 # 5. Educational Content Section
