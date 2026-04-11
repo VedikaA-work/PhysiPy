@@ -23,7 +23,7 @@ st.title("⚛️ PhysiPy")
 st.subheader("🍎 Newton's Second Law Calculator")
 
 # 4. Main Calculator Card
-st.markdown('<div class="card">', unsafe_allow_html=True)
+with st.container(border=True):
 
 st.write("### 🧮 Calculator")
 
@@ -47,7 +47,6 @@ if st.button("🚀 Calculate Force"):
     else:
         st.warning("⚠️ Please enter a mass value first")
 
-st.markdown('</div>', unsafe_allow_html=True)
 
 # 5. Educational Content Section
 with st.expander("🧠 Learn the Physics & Logic"):
