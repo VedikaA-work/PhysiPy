@@ -27,8 +27,9 @@ with st.container(border=True):
 
      st.write("### 🧮 Calculator")
 
-     mass = st.text_input("⚖️ Enter mass (kg)", placeholder="e.g. 10")
-     a = 9.8  # Constant acceleration
+mass = st.number_input("⚖️ Mass (kg)", min_value=0.0)
+acceleration = st.number_input("🚀 Acceleration (m/s²)", value=9.8)
+
      if st.button("🚀 Calculate Force"):
          if mass:
              try:
@@ -36,7 +37,6 @@ with st.container(border=True):
             
                  # Animation: Spinner gives the "Calculating" feel
                  with st.spinner('⚙️ Physics Engine Computing...'):
-                      time.sleep(1.2)  # Short delay for visual effect
                       force = m * a
             
                  st.success(f"💪 Force = {force:.2f} N")
