@@ -34,6 +34,7 @@ with st.container(border=True):
          if mass:
              try:
                  m = float(mass)
+                 a = float(acceleration)
             
                  # Animation: Spinner gives the "Calculating" feel
                  with st.spinner('⚙️ Physics Engine Computing...'):
