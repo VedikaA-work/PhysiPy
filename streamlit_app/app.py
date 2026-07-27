@@ -27,7 +27,7 @@ with st.container(border=True):
 
      st.write("### 🧮 Calculator")
 
-     mass = st.number_input("⚖️ Mass (kg)", min_value=0.0)
+     mass = st.number_input("⚖️ Mass (kg)", min_value=0.0, placeholder="e.g.-10")
      acceleration = st.number_input("🚀 Acceleration (m/s²)", value=9.8)
 
      if st.button("🚀 Calculate Force"):
