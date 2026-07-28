@@ -5,7 +5,7 @@ Python Tools for Physics and engineering
   <img src="PhysiPy.png" alt="PhysiPy Interactive Physics Calculator" width="800">
 </p>
 
-🚀 Live Demo: vedika-physipy.streamlit.app
+🚀 Live Demo: [physipy.streamlit.app](https://physipy.streamlit.app/)
 
 © 2026 Vedika Apte. All rights reserved.
 
